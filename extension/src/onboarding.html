@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Huh?</title>
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Huh<span>?</span></h1>
+      <p class="lede">Missed what someone just said in a video? Press a key and Huh? tells you — transcribed, translated and explained in your language, powered by Sarvam AI.</p>
+
+      <h2>How to use it</h2>
+      <ol>
+        <li>Open a video (YouTube, Vimeo, any tab playing audio).</li>
+        <li>Press <kbd class="sc">Alt+H</kbd> once (or click the Huh? toolbar icon). The badge turns green <b>ON</b> — Huh? is now listening.</li>
+        <li>Missed a line? Press <kbd class="sc">Alt+H</kbd> again. The video pauses and a card explains the last few seconds.</li>
+        <li><kbd>Esc</kbd> closes the card and resumes the video. Click the icon again to stop listening.</li>
+      </ol>
+      <p><button id="shortcuts" class="secondary">Change the shortcut</button> <button id="options">Pick your language</button></p>
+
+      <h2>Your privacy</h2>
+      <div class="note">
+        <ul>
+          <li>Huh? only listens to a tab after you press the shortcut or click the icon on it, and Chrome shows its “sharing this tab” indicator while it does.</li>
+          <li>Audio is kept in memory as a rolling 25-second buffer. It is never written to disk.</li>
+          <li>A clip is sent to your Huh? server — and from there to Sarvam AI — only when you press the shortcut.</li>
+          <li>The server doesn’t log audio or transcripts; it logs only request ids, latency and status.</li>
+        </ul>
+      </div>
+    </main>
+    <script src="onboarding.js"></script>
+  </body>
+</html>

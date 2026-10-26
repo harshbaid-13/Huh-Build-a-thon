@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Huh?",
+  "version": "0.1.0",
+  "description": "Missed what was just said in a video? Press Alt+H to transcribe, translate and explain the last few seconds — powered by Sarvam AI.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn7zpu1dw+vrbIOAUNdI+5E1vaMweKLePBdvehE9IkKTXPU/ceezAueoSzZYzGxb0zV+Vs0ld7/lr8MhzM8recHuEe4MJ4ECNhe0hOU5uatTD+noZDswo19fB1KtU0e071Wx5OBAB2FdtEBQX8NIlZi83WxQILUCaMZUokA04seToYIEmS31Xe1kYNOzij0NW6D8cLbCfNdVCyLUQGZ7SHwWQl+nwj+U5qIW8dpwfvZQLPdmo9n6ws1JU/67jzkpE8B8U/l6yPMdYg6SdsLzlQ3F81zkgqUcxh2L/SeO7viiViWnOE/KRA0twWQ5/x5wX5tOi/uBTx1MrPeOSlzuN6wIDAQAB",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "tabCapture",
+    "offscreen",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:8787/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Huh? — click to start listening",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "trigger-huh": {
+      "suggested_key": {
+        "default": "Alt+H"
+      },
+      "description": "Explain what was just said"
+    }
+  }
+}

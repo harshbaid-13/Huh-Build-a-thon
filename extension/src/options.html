@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Huh? settings</title>
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Huh<span>?</span> settings</h1>
+      <p class="lede">Press <kbd id="shortcut">Alt+H</kbd> on a video tab to start listening, and again after you miss something.
+        <a href="#" id="shortcuts-link">Change the shortcut</a></p>
+
+      <form id="form" class="panel">
+        <div class="row">
+          <label for="targetLang">Explain in<small>Translation and explanation language</small></label>
+          <select id="targetLang"></select>
+        </div>
+        <div class="row">
+          <label for="style">Translation style<small>Colloquial and code-mixed use Mayura (11 languages)</small></label>
+          <select id="style">
+            <option value="formal">Formal (Sarvam-Translate)</option>
+            <option value="colloquial">Colloquial (Mayura)</option>
+            <option value="code-mixed">Code-mixed / Hinglish (Mayura)</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="clipSeconds">Clip length<small>How far back to listen</small></label>
+          <div class="range"><input id="clipSeconds" type="range" min="5" max="25" step="1" /><output id="clipOut"></output></div>
+        </div>
+        <div class="row">
+          <label for="speaker">Voice<small>Used by 🔊 Listen (Bulbul v4 Flash)</small></label>
+          <select id="speaker"></select>
+        </div>
+        <div class="row">
+          <label for="autoPlay">Auto-play explanation audio</label>
+          <input id="autoPlay" type="checkbox" />
+        </div>
+        <div class="row">
+          <label for="backendUrl">Backend URL<small>Your Huh? server (holds the Sarvam key)</small></label>
+          <div>
+            <input id="backendUrl" type="url" placeholder="http://localhost:8787" />
+            <div class="status-line" id="health"></div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="devMode">Developer mode<small>Show per-stage timings on the card</small></label>
+          <input id="devMode" type="checkbox" />
+        </div>
+      </form>
+      <div class="saved" id="saved" role="status"></div>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
