@@ -4,9 +4,11 @@
 
 Huh? is a Chrome extension (Manifest V3). It takes the last ~12 seconds of a tab's audio, transcribes it with Sarvam AI, translates it into your language, explains it in plain words, and can read the explanation aloud. It works on YouTube, Vimeo, or any tab playing audio, in 22 Indian languages plus English.
 
-![The Huh? card explaining a Hinglish clip about startup runway](docs/card.png)
+[![Huh? launch video: a Hinglish clip gets transcribed, translated and explained after pressing Alt+H](docs/demo.gif)](docs/demo.mp4)
 
-<sub>Demo GIF goes here. The screenshot above is the real card, from an end-to-end run against the live Sarvam APIs: a Hindi/English code-mixed clip, explained in English.</sub>
+<sub>▶ **[Watch the 22-second launch video with sound](docs/demo.mp4)**. The card in it is the extension's real UI and stylesheet, filled with output from an end-to-end run against the live Sarvam APIs.</sub>
+
+![The Huh? card explaining a Hinglish clip about startup runway](docs/card.png)
 
 ## How it works
 
